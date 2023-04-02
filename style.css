@@ -153,18 +153,22 @@ h2 {
   }
 
   .player-container {
-    margin: 43px 20px 25px 20px;
+    margin: 35px 20px 25px 20px;
   }
 
   .far {
-    font-size: 38px;
+    font-size: 42px;
   }
 
   .reset-icon {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .result-container {
     margin: 0 20px;
+  }
+
+  .result-text {
+    font-size: 30px;
   }
 }
