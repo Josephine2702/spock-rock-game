@@ -50,8 +50,9 @@ function resetAll(){
   computerChoiceEl.textContent = '';
   playerChoiceEl.textContent = '';
   document.body.style.background = 'rgb(224, 255, 243)';
-
-  
+  playerGameIcons.forEach(icon => {
+    icon.addEventListener('click', select)
+  })
 }
 
 
@@ -82,9 +83,6 @@ function select(e) {
     playerChoiceEl.textContent = ` --- ${name}`;
     playerChoice = name;
     computerRandomChoice();
-    } else if(!target.classList.contains('player')){
-      
-      
     }
    checkResult();
 
@@ -127,13 +125,7 @@ function checkResult(playerChoice) {
 }
 
 
-playerGameIcons.forEach(icon => {
-  icon.addEventListener('click', select)
-})
-
 reset.addEventListener('click', resetAll);
-
-
 
 resetAll();
 
